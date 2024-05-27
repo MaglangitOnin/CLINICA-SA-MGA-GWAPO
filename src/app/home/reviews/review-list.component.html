@@ -1,0 +1,9 @@
+<h2>Reviews</h2>
+<ul>
+    <li *ngFor="let review of reviews">
+        {{ review.rating }} - {{ review.feedback }}
+        <button (click)="editReview(review.id)">Edit</button>
+        <button (click)="deleteReview(review.id)">Delete</button>
+    </li>
+</ul>
+<button (click)="addReview()">Add Review</button>

@@ -1,0 +1,9 @@
+<h2>Appointments</h2>
+<ul>
+    <li *ngFor="let appointment of appointments">
+        {{ appointment.name }} - {{ appointment.date }} - {{ appointment.reason }}
+        <button (click)="editAppointment(appointment.id)">Edit</button>
+        <button (click)="deleteAppointment(appointment.id)">Delete</button>
+    </li>
+</ul>
+<button (click)="addAppointment()">Add Appointment</button>

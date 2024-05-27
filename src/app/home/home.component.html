@@ -1,6 +1,13 @@
 <div class="p-4">
     <div class="container">
         <h1>Hi {{account.firstName}}!</h1>
-        <p>You're logged in with Angular 10 & JWT!!</p>
+        <p>Welcome to the Clinica Appointment</p>
+        
+        <nav>
+            <a routerLink="/home/appointments" routerLinkActive="active">Appointments</a> |
+            <a routerLink="/home/reviews" routerLinkActive="active">Reviews</a>
+        </nav>
+
+        <router-outlet></router-outlet>
     </div>
 </div>
